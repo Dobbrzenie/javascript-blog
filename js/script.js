@@ -300,3 +300,5 @@ const addClickListenersToAuthors = function(){
   }
 }
 addClickListenersToAuthors();
+
+// comment fot git work test
