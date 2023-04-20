@@ -45,7 +45,7 @@ const clickedElement = this;
 
   /* [done] add class 'active' to the correct article */
   targetArticle.classList.add('active');
-}
+};
 const generateTitleLinks = function (selector = '') {
   /* remove contents of titleList */
   const titleList = document.querySelector(optTitleListSelector);
@@ -77,13 +77,13 @@ const generateTitleLinks = function (selector = '') {
     html = html + linkHTML;
   }
   titleList.innerHTML = html;
-}
-generateTitleLinks();
-const links = document.querySelectorAll(".titles a");
-console.log(links)
-for (let link of links) {
+  
+  const links = document.querySelectorAll(".titles a");
+  for (let link of links) {
   link.addEventListener("click", titleClickHandler);
-}
+};
+};
+generateTitleLinks();
 
 function calculateTagsParams(tags) {
   const params = { min: "999999", max: "0" };
